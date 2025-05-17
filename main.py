@@ -1,8 +1,17 @@
 import tkinter
-
+from tkinter import PhotoImage
 window = tkinter.Tk()
 window.title("Secret Notes")
 window.minsize(width=700, height=600)
+
+
+
+image= tkinter.PhotoImage(file="top-secret_10201555.png")
+image_label= tkinter.Label(window, image=image)
+image_label.pack()
+
+
+
 
 title_message_label = tkinter.Label(window, text="Enter Your Title")
 title_message_label.pack()
@@ -20,5 +29,17 @@ save_encrypted_message_button = tkinter.Button(window, text="Save & Encrypt",wid
 save_encrypted_message_button.pack()
 decrypt_button = tkinter.Button(window, text="Decrypt",width=12,height=0)
 decrypt_button.pack()
+
+
+
+
+
+
+
+
+
+
+
+
 
 window.mainloop()
